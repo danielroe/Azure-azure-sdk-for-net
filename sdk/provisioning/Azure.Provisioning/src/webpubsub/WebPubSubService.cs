@@ -63,7 +63,7 @@ namespace Azure.Provisioning.WebPubSub
         /// <param name="scope">The scope.</param>
         /// <param name="name">The resource name.</param>
         /// <param name="parent">The resource group.</param>
-        /// <returns>The KeyVault instance.</returns>
+        /// <returns>The WebPubSub service instance.</returns>
         public static WebPubSubService FromExisting(IConstruct scope, string name, ResourceGroup? parent = null)
             => new WebPubSubService(scope, parent: parent, name: name, isExisting: true);
 
